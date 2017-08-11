@@ -22,10 +22,13 @@ import com.lanou.utils.AjaxResult;
 @Controller
 public class MainController {
 	
-	// 使用spring的依赖注入(DI)
-	// 可以使用Resource和Autowired注解
+	// 浣跨敤spring鐨勪緷璧栨敞鍏�(DI)
+	// 鍙互浣跨敤Resource鍜孉utowired娉ㄨВ
 	@Resource(name="msgMapper")
 	private MessageMapper messageMapper;
+	
+	
+	// ......
 	
 	@Resource
 	private MessageService messageService;
@@ -54,7 +57,7 @@ public class MainController {
 		message.setDown(0);
 		messageMapper.insert(message);
 		
-		AjaxResult ajaxResult = AjaxResult.ajaxResult("添加成功", "0", message);
+		AjaxResult ajaxResult = AjaxResult.ajaxResult("娣诲姞鎴愬姛", "0", message);
 		
 		return ajaxResult;
 	}
@@ -68,7 +71,7 @@ public class MainController {
 		
 		Map<String, Object> reMap = new HashMap<String, Object>();
 		
-		reMap.put("msg", "删除成功!!");
+		reMap.put("msg", "鍒犻櫎鎴愬姛!!");
 		reMap.put("errorCode", 0);
 		reMap.put("obj", id);
 		
