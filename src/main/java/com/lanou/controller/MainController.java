@@ -21,6 +21,7 @@ import com.lanou.utils.AjaxResult;
 
 @Controller
 public class MainController {
+	//打开vvl
 	
 	// 浣跨敤spring鐨勪緷璧栨敞鍏�(DI)
 	// 鍙互浣跨敤Resource鍜孉utowired娉ㄨВ
